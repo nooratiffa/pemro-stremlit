@@ -49,15 +49,7 @@ st.json({
     'c1': [1, 2, 3, 4],
     'c2': [10, 20, 30, 40],
 })
-import matplotlib.pyplot as plt
-import numpy as np
-import streamlit as st
- 
-x = np.random.normal(15, 5, 250)
- 
-fig, ax = plt.subplots()
-ax.hist(x=x, bins=15)
-st.pyplot(fig)
+
 name = st.text_input(label='Nama lengkap', value='')
 st.write('Nama: ', name)
 text = st.text_area('Feedback')
@@ -116,7 +108,7 @@ values = st.slider(
     min_value=0, max_value=100, value=(0, 100))
 st.write('Values:', values)
 values = st.slider(
-    label='Select a range of values',
+    label='Select a range of vaues',
     min_value=0, max_value=100, value=(0, 100))
 st.write('Values:', values)
    
